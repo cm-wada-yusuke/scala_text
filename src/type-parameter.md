@@ -299,7 +299,7 @@ class ShowablePair[A <: Show, B <: Show](val a: A, val b: B) extends Show {
 
 ```tut:fail:silent
 abstract class Stack[+A]{
-  def push(element: E): Stack[A]
+  def push(element: A): Stack[A]
   def top: A
   def pop: Stack[A]
   def isEmpty: Boolean
